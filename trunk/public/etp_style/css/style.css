@@ -1,0 +1,77 @@
+/*header*/
+.head { width: 100%; /*height: 60px;*/ background: #000000; }
+.head .head_content { width: 900px; height: 60px; margin: 0 auto; }
+.head .head_content .head_text { height: 60px; line-height: 60px; overflow: hidden; }
+.head .head_content .head_text a { color: #FFF; }
+
+/*content*/
+#content { background: #F2F2F2; }
+.common_wrap { width: 1100px; margin: 0 auto;}
+.common_wrap .login_wrap { width: 540px; margin: 0 auto;}
+.common_wrap .login_wrap .loginForm { width: 540px; min-height: 418px; margin-top: 80px; background: #F3F3F3;}
+.common_wrap .login_wrap .loginForm .login_title { text-align: center; font-size: 24px; height: 70px; line-height: 70px; font-weight: 700; letter-spacing: 0.8em;}
+.common_wrap .login_wrap .loginForm .login_input label { display: inline-block; width: 98px; }
+/*footer*/
+.login_footer { margin: 80px 0 80px 0; width: 100%; height: 30px; line-height: 30px; text-align: center;}
+.footer { width: 100%; height: 40px; background: #000000; position: fixed; bottom: 0;}
+.footer .copyRight { height: 40px; line-height: 40px; text-align: center; color: #FFFFFF; }
+.footer .copyRight a { color: #0066CC; }
+
+/*login_form*/
+.loginForm .user_ico, .pwd_ico { padding-left: 30px; }
+.loginForm .user_ico { background: #FFFFFF url('../images/u12.png') no-repeat 4px 3px; }
+.loginForm .pwd_ico { background: #FFFFFF url('../images/u29.png') no-repeat 4px 3px; }
+.loginForm .login_input { width: 200px; margin: 18px auto; }
+.loginForm .forget_password,.loginForm .login_but { width: 230px; margin: 0 auto 10px; }
+.loginForm input#submitBtn{ width: 230px;}
+.loginForm .reg_linke { width: 230px; margin: 0 auto; }
+.loginForm .reg_linke a { margin: 0 4px; color: #0252A2; }
+.loginForm .login_msg { margin-top: 10px; }
+.loginForm  #errorMsg .error,.loginForm  #errorMsg .success { height: 30px; line-height: 30px; display: inline-block; }
+.loginForm  #errorMsg .error { color: #FF0000; }
+.loginForm  #errorMsg .success { color: #006F09; }
+.loginForm .verify_code_div {width: 230px;}
+.loginForm .verify_code_div .ver_ico_wrap {display: inline-block; overflow: hidden; width: 100px; margin-right: 28px; background: #FFFFFF;}
+.loginForm .verify_code_div .ver_img_wrap img { height: 34px; width: 100px; cursor: pointer;}
+/*register*/
+.common_wrap .reg_wrap { width: 900px; margin: 0 auto; padding-bottom: 70px;}
+.common_wrap .reg_wrap .reg_select { padding-top: 50px; font-size: 20px;}
+.common_wrap .reg_wrap .reg_form_wrap { margin-top: 20px; background: #FFFFFF; min-height: 460px;}
+.common_wrap .reg_wrap .reg_form_inner_wrap { width: 790px; margin: 0 auto; line-height: 30px; overflow: hidden; padding-top: 40px;}
+.reg_line_wrap { margin-bottom: 40px; }
+.reg_line_wrap span {display: inline-block;}
+.reg_line_wrap .reg_title { width: 150px; font-size: 14px; text-align: right;}
+.reg_line_wrap .reg_input { width: 240px; margin-right: 20px;}
+.reg_line_wrap span.verify_input { width: 110px; }
+.reg_line_wrap .reg_input label { margin-right: 50px; }
+.reg_line_wrap .reg_title,.reg_line_wrap .type_radio { margin-right: 20px; }
+.reg_line_wrap .reg_title i {color: red;}
+.reg_line_wrap .notice { color: #999999; }
+.reg_line_wrap .verify_code { margin-right: 38px; }
+.reg_line_wrap .verify_code img { width:100px; height: 34px; cursor: pointer;}
+.reg_form_inner_wrap .reg_submit_btn { text-align: center; }
+.reg_form_inner_wrap .reg_submit_btn input { margin-right: 20px; width: 150px;}
+.reg_form_inner_wrap #registerinfo { margin: 10px 0 0; padding-left: 176px; height: 30px; line-height: 30px; }
+#registerinfo .error { color: #FF0000; }
+#registerinfo .success { color: #007920; }
+/*EmailVer*/
+.reg_email_ver_content { padding-top: 30px; }
+.reg_email_ver_content .gte_wrap { width: 690px; text-align: center; margin: 10px auto 0;}
+.reg_email_ver_content .gte_wrap p.reg_title { height: 34px; margin: 0 auto; line-height: 34px; font-size: 16px; padding-left: 50px; background: url('../images/u8.png') no-repeat 0 0 ;}
+.reg_email_ver_content .gte_wrap p.reg_title span { color: #CC6600; margin: 0 8px; }
+.reg_email_ver_content .gte_wrap a.btn {display: block; width: 100px; margin: 20px auto 0;}
+.reg_email_ver_content .gte_wrap a.btn:hover { color: #FFFFFF; text-decoration: none;}
+.reg_email_ver_content .gte_wrap .no_email { text-align: left; margin-top: 160px;}
+.reg_email_ver_content .gte_wrap .no_email .no_email_title { height: 30px; line-height: 30px; font-size: 14px; font-weight: 700; padding-left: 30px; background: url('../images/q.png') no-repeat 0 5px;}
+.reg_email_ver_content .gte_wrap .no_email .no_email_info { line-height: 28px; margin-top: 16px;}
+.reg_email_ver_content .gte_wrap .no_email .no_email_info a { color: #CC6600; }
+/*reg_xy*/
+#registerForm { padding-bottom: 20px; }
+#registerForm .tk_title { height: 30px; line-height: 30px; font-size: 22px; color: #0066CC; text-align: center; width: 738px; margin: 0 auto; }
+#registerForm .agree_label { display: inline-block; margin: 0 0 18px 54px; }
+#registerForm .agree_label .agree_text { margin-top: 4px; }
+#registerForm #registerinfo { /*margin-left: 54px;*/ }
+div#provision { width: 738px !important; height:360px; overflow: auto; line-height: 14px; margin: 20px auto; border: 1px solid #CCC; padding: 0 20px;}
+div#provision { line-height: 20px; }
+div#provision .tk_in_title { margin-top: 20px; }
+div#provision p.tk_tiao { text-indent: 2em; }

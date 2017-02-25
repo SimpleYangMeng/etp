@@ -1,0 +1,38 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body{line-height: 1; font-family:Arial, "微软雅黑"; font-size: 12px;}
+ol, ul{list-style: none;}
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content: '';content: none;}
+:focus{outline: 0;}
+ins{text-decoration: none;}
+del{text-decoration: line-through;}
+table{border-collapse: collapse;border-spacing: 0;}
+a { color: #000000; text-decoration: none; cursor: pointer; }
+a:hover { color: #0066CC; text-decoration: underline; }
+.leftloat{ float:left;}
+.leftright{ float:right;}
+.pipe { margin: 0 5px; color: #CCC; }
+
+/*header*/
+.head { width: 100%; height: 60px; background: #000000; }
+.head .head_content { width: 900px; height: 60px; margin: 0 auto; }
+.head .head_content .head_text { height: 60px; line-height: 60px; overflow: hidden; }
+.head .head_content .head_text a { color: #FFF; }
+
+/*content*/
+.common_wrap { width: 1100px; margin: 0 auto; }
+.login_wrap { width: 400px; margin: 0 auto;}
+.login_wrap .loginForm { width: 400px; min-height: 360px; margin-top: 80px; background: #F3F3F3;}
+.login_wrap .loginForm .login_title { text-align: center; font-size: 24px; height: 100px; line-height: 100px; font-weight: 700; }
+/*footer*/
+.footer { margin-top: 80px; width: 100%; height: 30px; line-height: 30px; text-align: center;}

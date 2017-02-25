@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>E-traidPay</title>
+    <script src="/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/compatible.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/css/show-loading/showLoading.css" />
+    <script src="/js/jquery.showLoading.min.js" type="text/javascript"></script>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="/etp_style_v1.0/js/bootstrap/css/bootstrap.css" />
+    <script type="text/javascript" src="/etp_style_v1.0/js/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/etp_style_v1.0/js/bootstrap/js/bootstrap-dialog.js"></script>
+    <!--[if lte IE 6]>
+    <script src="/js/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+    <![endif]-->
+    <!-- stylesheets -->
+    <link href="/etp_style_v1.0/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="/etp_style_v1.0/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/etp_style_v1.0/css/sample.css" rel="stylesheet" type="text/css" />
+    <link href="/etp_style_v1.0/css/member.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <?php echo $this->action("header-inner", "menu", "default");?>
+    <!-- content -->
+    <div class="m_mainContainer">
+        <?php echo $this->layout()->content;?>
+        <!-- end content / right -->
+        <div clear="clear"></div>
+    </div>
+    <!-- end content -->
+    <?php echo $this->action("footer-inner", "menu", "default");?>
+</body>
+</html>

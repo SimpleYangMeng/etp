@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* Typography CSS */
+body {
+	font-size:12px;
+	background-color:#fff;
+	font-family:Verdana,Tahoma, Arial, Helvetica, sans-serif;
+}
+a {color:#36c; text-decoration:none;}
+a:link {color: #36c;}
+a:visited {color: #ACA9A4;}
+a:hover {color: #f50; text-decoration:underline;}
+a:active {color: #f50; text-decoration:underline;}
+a:link.usable,a:visited.usable,a:hover.usable,a:active.usable {
+	color:#008000;
+	font-weight:700;
+}
+span.hidden {
+	display:none;
+}
+.even { background-color:#feffe8;}
+.odd { background-color:#eff6fd;}
+.usable {
+	color:#008000;
+	font-weight:700;
+}
+.unused {
+	color:#f60;
+	font-weight:700;
+}
+.setingBox,.search-box,.addnew-box {
+	background:#F2F2F2;
+	border:1px solid #E4E4E4;
+	height:36px;
+	line-height:34px;
+	margin:5px auto;
+	padding-left:15px;
+	color:#666;
+}
+.addnew-box {
+	text-align:center;
+}
+
+.setingBox fieldse,.search-box fieldset,.addnew-box fieldset {
+	.margin-top:5px;
+}
+.setingBox select,.search-box select,.addnew-box select {
+	border:1px solid #ace;
+}
+

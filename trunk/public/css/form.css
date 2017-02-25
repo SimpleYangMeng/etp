@@ -1,0 +1,373 @@
+@charset "utf-8";
+/* Form CSS */
+form {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 1em 0;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+
+legend {
+	padding: 0.5em;
+	color: #036;
+	background: transparent;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+label {
+	float: left;
+	width: 120px;
+	padding: 0 1em;
+	text-align: right;
+	cursor:pointer;
+}
+
+fieldset div {
+	margin-bottom: .5em;
+	padding: 0;
+	display: block;
+}
+
+fieldset div input, fieldset div textarea {
+	width: 220px;
+	border-top: 1px solid #555;
+	border-left: 1px solid #555;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 1px;
+	color: #333;
+}
+fieldset div textarea {
+	width:310px;
+}
+fieldset div select {
+	padding: 1px;
+	border-top: 1px solid #555;
+	border-left: 1px solid #555;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+div.fm-multi div {
+	margin: 5px 0;
+}
+
+div.fm-multi input {
+	width: 1em;
+}
+
+div.fm-multi label {
+	display: block;
+	width: 200px; 
+	padding-left: 5em;
+	text-align: left;
+}
+
+#fm-submit {
+	clear: both;
+	padding-top: 1em;
+	text-align: center;
+}
+/*
+#fm-submit input {
+	border: 1px solid #333;
+	padding: 2px 1em;
+	background: #555;
+	color: #fff;
+	font-size: 100%;
+}
+*/
+#fm-submit input {
+	width:69px;
+	height:20px;
+	border:0;
+	padding:1px 0;
+	margin:2px 8px;
+	background: #555 url(../images/bg_btn_noshadow.gif) no-repeat;
+	color: #fff;
+	font-size: 100%;
+}
+input:focus, textarea:focus {
+	background: #efefef;
+	color: #000;
+}
+
+	
+/* required fields - does not work in IE */
+fieldset div.fm-req {
+	font-weight: bold;
+}
+
+.fm-req #fm-verify { width:50px;}
+
+/* Basic page styling, not part of the form example */
+
+p#fm-intro {
+	margin: 0;
+}
+
+div span {
+	color: #036;
+}
+
+input.text {
+	width:220px;
+	margin-left:10px;
+	padding:3px 1px;
+	color:#36c;
+	border:1px solid #ace;
+}
+input.middle {
+	width:200px;
+}
+input.small {
+	width:120px;
+}
+input.xsmall {
+	width:80px;
+}
+select {
+	border:1px solid #ace;
+}
+
+/***************************
+ * Flow Steps 流程步骤条
+ ***************************/
+.flow-steps {
+    overflow: hidden; /* clearfix */
+	clear:both;
+	display:inline-block;
+    margin: 20px 0;
+}
+.flow-steps .num3 li { width: 301px; }
+.flow-steps .num4 li { width: 222px; }
+.flow-steps .num5 li { width: 175px; } /* (950 / 5) - 15 padding-right */
+.flow-steps .num6 li { width: 143px; }
+
+.flow-steps li {
+    float: left;
+    background: #e4e4e4 url(../images/flow_steps_bg.png) no-repeat 100% 0;
+    /*list-style: decimal;*/ /* ie6下不行 */
+    font-size: 14px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #404040;
+    padding: 0 15px 0 0;
+    overflow: hidden;
+}
+.flow-steps li span,
+.flow-steps li strong {
+    display: block;
+}
+.flow-steps li .first {
+    background: #e4e4e4 url(../images/flow_steps_bg.png) no-repeat -12px -69px;
+}
+.flow-steps li.last {
+    background-position: 100% -138px;
+}
+.flow-steps li.current {
+    background-color: #f60;
+    color: #fff;
+}
+.flow-steps li.current .first {
+    background-color: #f60;
+    background-position: -12px -92px;
+}
+.flow-steps li.current-prev {
+    background-position: 100% -23px !important;
+}
+.flow-steps li.done {
+    background-color: #ffe6ba;
+    background-position: 100% -46px;
+    color: #f60;
+}
+.flow-steps li.done .first {
+    background-color: #ffe6ba;
+    background-position: -12px -115px;
+}
+.flow-steps li.last-current {
+    background-color: #f60;
+    color: #fff;
+    background-position: 100% -161px;
+}
+
+/*	
+	@name fm-layout
+	@author &lt;a href="mailto:dark.gu@gmail.com"&gt;Jeffery Lau&lt;/a&gt;
+	@version 2009.09.10 beta release
+	@description 约定：
+		x :表示在x轴上的布局或者视图方向
+		y :表示在y轴上的布局或者视图方向
+		req :表示必要的选项
+		opt :表示可选的选项
+*/
+	/*layout*/
+.fm-layout {
+	width:960px;
+	margin:0 auto;
+}
+.fm-layout fieldset {
+	border:1px solid #dcdcdc;
+	margin:0;
+	padding:10px;
+	position:relative;
+}
+.fm-layout fieldset div.fm-req,
+.fm-layout fieldset div.fm-opt {
+	margin:0 0 10px 0;
+	clear:both;
+	overflow:hidden;
+	position:relative;
+}
+.fm-layout fieldset label,
+.fm-layout fieldset .label {
+	cursor:default;
+	display:block;
+	float:left;
+	width:120px;
+	text-align:right;
+	padding-right:20px;
+	position:relative;
+}
+.fm-layout fieldset label strong,
+.fm-layout fieldset .label strong {
+	color:#f30;
+	font-size:120%;
+	font-weight:700;
+	position:absolute;
+	right:10px;
+}
+.fm-layout fieldset div.fm-multi {
+	clear:both;
+	overflow:hidden;
+	zoom:1;
+	margin:0;
+	padding:0;
+}
+.fm-layout fieldset div.fm-multi label {
+	float:none;
+	display:inline;
+	position:static;
+}
+.fm-layout fieldset div.fm-multi ul {
+	float:left;
+	list-style:none;
+}
+.fm-layout fieldset div.fm-verify .verify-code-x {
+	display:inline;
+}
+.fm-layout fieldset div.fm-verify .verify-code-y {
+	margin:5px 0 0 140px;
+}
+.fm-layout fieldset div.fm-verify img {
+	vertical-align:middle;
+	cursor:pointer;
+}
+.fm-layout div.fm-submit {
+	margin:10px 0;
+	text-align:center;
+}
+.fm-layout div.fm-submit input {
+	width:120px;
+	height:30px;
+	letter-spacing:5px;
+	text-align:center;
+	/* -hidden text-
+	text-indent:-999em;
+	*/
+}
+	/*element*/
+.fm-layout fieldset input,
+.fm-layout fieldset textarea {
+	border:1px solid #ddd;
+	padding:2px;
+}
+.fm-layout fieldset input {
+	width:149px;
+}
+.fm-layout fieldset textarea {
+	width:360px;
+	height:100px;
+}
+.fm-layout fieldset div.fm-multi input {
+	border:0 none;
+	width:auto;
+}
+.fm-layout fieldset input.size100 {
+	width:100px;
+}
+.fm-layout fieldset input.size200 {
+	width:200px;
+}
+.fm-layout fieldset input.size250 {
+	width:250px;
+}
+.fm-layout fieldset input.size50 {
+	width:359px;
+}
+.fm-layout fieldset input.size3 {
+	width:30px;
+}
+.fm-layout fieldset input.size8 {
+	width:60px;
+}
+	/*hint*/
+.fm-layout fieldset .hint {
+	color:#b1b1b1;
+}
+.fm-layout fieldset .hint-y {
+	display:block;
+	margin-left:140px;
+}
+
+	/*event*/
+.fm-layout fieldset .error input {
+	background:#ffdfdd;
+	border:1px solid #ff4621;
+}
+.fm-layout fieldset .error .hint {
+	color:#f30;
+}
+.fm-layout fieldset .remind input {
+	background:#FFFCC7;
+	border:1px solid #F7A900;
+}
+.fm-layout fieldset .remind .hint {
+	color:#F7A900;
+}
+.fm-layout fieldset .ok input {
+	background:#e9ffcf;
+	border:1px solid #61A216;
+}
+.fm-layout fieldset input:focus,
+.fm-layout fieldset input.focus,
+.fm-layout fieldset textarea:focus,
+.fm-layout fieldset textarea.focus,
+.fm-layout fieldset .error input:focus,
+.fm-layout fieldset .error input.focus,
+.fm-layout fieldset .error textarea:focus,
+.fm-layout fieldset .error textarea.focus,
+.fm-layout fieldset .remid input:focus,
+.fm-layout fieldset .remid input.focus,
+.fm-layout fieldset .remid textarea:focus,
+.fm-layout fieldset .remid textarea.focus,
+.fm-layout fieldset .ok input:focus,
+.fm-layout fieldset .ok input.focus,
+.fm-layout fieldset .ok textarea:focus,
+.fm-layout fieldset .ok textarea.focus {
+	background:#e2f5ff;
+	border:1px solid #00a8ff;
+}
+
+/* -End- fm-layout */
+
+.reg-form {
+
+}

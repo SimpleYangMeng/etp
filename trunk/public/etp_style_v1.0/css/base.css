@@ -1,0 +1,63 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body{line-height: 1; font-family:Arial, "微软雅黑"; font-size: 12px;}
+ol, ul{list-style: none;}
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content: '';content: none;}
+:focus{outline: 0;}
+ins { text-decoration: none;}
+del { text-decoration: line-through;}
+table { border-collapse: collapse;border-spacing: 0;}
+i { text-decoration: none; }
+label { cursor: pointer; }
+dl, dt, dd, ol, ul, li {list-style: none;}
+.cl:after { content: "."; display: block; height:  0; clear: both; visibility: hidden; } .cl { zoom:  1; }
+.hidefocus { outline: none; }
+.tc{ text-align:center;}
+.mr10{ margin-right:10px;}
+.mr15{ margin-right:15px;}
+.mL10{ margin-left:10px;}
+.mL15{ margin-left:15px;}
+.mt10{ margin-top:10px;}
+.mt15{ margin-top:15px;}
+.mb10{ margin-bottom:10px;}
+.mb15{ margin-bottom:15px;}
+
+.input_wrap { height: 34px; border: 1px solid #c2c2c2; border-radius: 3px;}
+
+/*按钮*/
+input[type='submit'], input[type='reset'],input[type='button'], a.btn { background: none; background-color: #00a0e9; border: none; cursor: pointer; padding: 0px 20px; color: #FFF; font-weight: 700; border-radius: 3px;}
+input[type='submit']:hover, input[type='reset']:hover,input[type='button']:hover, a.btn:hover { background-color:#0085C1; }
+
+/*单选、复选*/
+input,
+textarea,
+select,
+button,
+label{margin: 0;padding: 0;vertical-align: middle;font-size: 100%;font-family: inherit;outline: none;}
+input,
+textarea{-webkit-transition: all 0.15s ease-in 0;-moz-transition: all 0.15s ease-in 0;-ms-transition: all 0.15s ease-in 0;transition: all 0.15s ease-in 0;outline: none;border: 1px solid #d8d8d8;border-color: #c0c0c0 #e1e1e1 #e1e1e1 #c0c0c0;color: #000;}
+input[type="checkbox"], input[type="radio"]{box-sizing: border-box;padding: 0;}
+input[disabled], input[readonly]{background-color: #f6f6f6;cursor: default;}
+input[type="checkbox"], input[type="radio"]{height: 23px;font-size: 12px;margin: 0 5px 0 0;padding: 3px;}
+label input{width: 22px;}
+select{height: 22px;line-height: 18px;padding: 2px;}
+textarea{vertical-align: top;width: 300px;min-height: 80px;_height: 80px;padding: 3px;}
+
+/*超链接*/
+a { color: #000000; text-decoration: none; cursor: pointer; }
+a:hover { color: #0066CC; text-decoration: underline; }
+a.blue_btn:hover { color: #FFFFFF; }
+.leftloat{ float:left;}
+.leftright{ float:right;}
+
+.pipe { margin: 0 5px; color: #CCC; }

@@ -1,0 +1,48 @@
+.loading-indicator {
+	height: 80px;
+	width: 80px;
+	background: url( '../../images/show-loading/loading.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.loading-indicator-bar {
+	height: 80px;
+	width: 80px;
+	background: url( '../../images/show-loading/loading-bars.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.loading-indicator-circle-1 {
+	height: 80px;
+	width: 80px;
+	background: url( '../../images/show-loading/loading-1.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.loading-indicator-circle-2 {
+	height: 80px;
+	width: 80px;
+	background: url( '../../images/show-loading/loading-3.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.loading-indicator-circle-3 {
+	height: 80px;
+	width: 80px;
+	background: url( '../../images/show-loading/loading-4.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.loading-indicator-bar-2 {
+	height: 80px;
+	width: 80px;
+	background: url( '../../images/show-loading/loading-2.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.loading-indicator-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
